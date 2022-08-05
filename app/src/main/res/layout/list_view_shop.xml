@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/imageViewImage_shop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textViewName_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imageViewImage_shop"
+        android:layout_toRightOf="@id/imageViewImage_shop"
+        android:layout_marginLeft="10dp"
+        android:text="name"></TextView>
+
+    <TextView
+        android:id="@+id/textViewDescribe_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imageViewImage_shop"
+        android:layout_toRightOf="@id/imageViewImage_shop"
+        android:layout_marginLeft="10dp"
+        android:textSize="11sp"
+        android:text="discribe">
+    </TextView>
+
+    <TextView
+        android:id="@+id/textViewPrice_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/textViewNumber_shop"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignBottom="@id/imageViewImage_shop"
+        android:text="price"
+        android:textColor="@android:color/holo_red_light"
+        android:textAppearance="?android:attr/textAppearanceLarge">
+    </TextView>
+
+    <TextView
+        android:id="@+id/textViewNumber_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignBottom="@id/imageViewImage_shop"
+        android:text="   "
+        android:textSize="15sp"
+        android:textColor="@android:color/darker_gray"
+        android:textAppearance="?android:attr/textAppearanceLarge">
+    </TextView>
+
+</RelativeLayout>

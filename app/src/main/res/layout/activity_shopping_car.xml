@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".ShoppingCarActivity"
+    android:padding="10dp">
+
+    <ListView
+        android:id="@+id/listView_ShoppingCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/listView_OK">
+    </ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_toLeftOf="@id/listView_total"
+        android:layout_alignBottom="@id/listView_OK"
+        android:text="总计: "
+        android:textSize="20sp"
+        android:textColor="@android:color/holo_red_light">
+    </TextView>
+
+    <TextView
+        android:id="@+id/listView_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_toLeftOf="@id/listView_OK"
+        android:layout_alignBottom="@id/listView_OK"
+        android:text="0"
+        android:textSize="20sp"
+        android:textColor="@android:color/holo_red_light">
+    </TextView>
+
+    <Button
+        android:id="@+id/listView_OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="提交订单"
+        android:shadowColor="@color/purple_700"
+        android:textColor="@color/purple_200">
+    </Button>
+
+</RelativeLayout>
